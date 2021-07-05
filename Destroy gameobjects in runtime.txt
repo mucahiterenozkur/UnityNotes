@@ -1,0 +1,7 @@
+
+
+Transform panelTransform = GameObject.Find("station_panel").transform;
+
+foreach(Transform child in panelTransform) {
+    Destroy(child.gameObject);
+}

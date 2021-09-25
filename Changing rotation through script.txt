@@ -1,0 +1,6 @@
+-How to change rotation throug script?
+
+
+var rotationVector = transform.rotation.eulerAngles;
+rotationVector.z = 0;
+transform.rotation = Quaternion.Euler(rotationVector);

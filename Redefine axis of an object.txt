@@ -1,0 +1,11 @@
+You can only actually set that up inside the modeling program you are using.
+There is a trick to work around it though. The object you want to change the axis on I'll call ObjectX:
+
+	• create an empty GameObject
+	• make the empty GameObject the child of ObjectX
+	• reset the Transform of the empty GameObject (it should now center ObjectX)
+	• unparent the empty GameObject
+	• rotate the empty GameObject so that it's axis are the way you'd like them to be on ObjectX
+	• make the empty GameObject the parent of ObjectX
+
+Kaynak <https://answers.unity.com/questions/62675/redefine-axis-of-an-object.html> 

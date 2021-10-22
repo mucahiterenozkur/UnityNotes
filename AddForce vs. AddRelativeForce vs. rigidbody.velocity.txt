@@ -1,0 +1,14 @@
+AddForce vs. AddRelativeForce vs. rigidbody.velocity 
+
+
+First of all the difference is, rigidbody.velocity sets the velocity property of the rigidbody while AddForce affects velocity while taking other factors into account (drag etc.) in a per-fixed-frame fashion (per FixedUpdate). 
+A similar real world example would be letting a slingshot go vs pushing a heavy box. 
+We don't directly set the velocity of objects in the real world but that's the closest example I can give.
+
+As for constant force, it's mainly for objects that have their own pushing power. 
+Like rockets. It wouldn't be very different than doing AddForce in a script every FixedUpdate (without knowing the actual technical difference between the Constant Force component and doing it yourself, result would be the same nevertheless).
+
+Physics methods (like AddForce) should be called under FixedUpdate, because that is when Unity processes physics calls.
+You can set the velocity property whereever you want, since the set velocity will be used on the following fixed updates anyways.
+
+Kaynak <https://forum.unity.com/threads/addforce-vs-addrelativeforce-vs-rigidbody-velocity.32808/> 

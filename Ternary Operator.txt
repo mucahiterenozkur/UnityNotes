@@ -1,0 +1,6 @@
+https://docs.microsoft.com/tr-tr/dotnet/csharp/language-reference/operators/conditional-operator
+
+string GetWeatherDisplay(double tempInCelsius) => tempInCelsius < 20.0 ? "Cold." : "Perfect!";
+
+Console.WriteLine(GetWeatherDisplay(15));  // output: Cold.
+Console.WriteLine(GetWeatherDisplay(27));  // output: Perfect!

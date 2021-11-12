@@ -1,0 +1,7 @@
+Image vs Sprite
+
+The main difference is the renderer, Sprites use a SpriteRenderer and UI uses a CanvasRenderer.
+
+Other than that, not much.
+
+UI is effectively the 2D sprite system bounded by a heap load of additional functionality to layout your UI for rendering.
